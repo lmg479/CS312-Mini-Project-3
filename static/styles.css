@@ -1,0 +1,585 @@
+body,p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Ensure space between logo and the rest */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* New container for nav links and profile */
+.nav-profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add spacing between nav links and profile icon */
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Space between the nav links */
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding to the links */
+    transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Profile icon */
+.profile-icon img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.profile-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Flex container for the books */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-item {
+    flex: 1 1 calc(40% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+/* Style the book cover */
+.book-cover {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Style for book title and author */
+.book-title {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Container for buttons */
+.book-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Styling buttons */
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #444;
+}
+
+/* Inline block styling for the form to prevent wrapping */
+form.delete-form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.create-button-container {
+    display: flex;
+    justify-content: center; /* Center the button within the parent */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+/* Consolidated styling for the "Create New Review" button */
+.create-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Ensure the button only takes up as much width as it needs */
+    display: inline-block; /* Prevent the button from stretching */
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Center the button */
+}
+
+.create-button:hover {
+    background-color: #555;
+}
+
+/* Styling for the message */
+.no-books-container {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto; 
+}
+
+form, .profile-container
+{
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px;
+  margin-top: 30px;
+}
+
+textarea, input[type="file"] {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.review-container, {
+    margin: 0 auto; 
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-info, .description, .created-at {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Makes sure it's vertically centered */
+}
+
+.login-form {
+    background-color: #eeeeee;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for form input fields */
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Style the login button */
+.login-button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+/* Style the paragraph for sign-up link */
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Style the sign-up link */
+.login-form a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+.profile-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.create-button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+    background-color: #555;
+}
+
+/* Login option styling */
+.login-option {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-option p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #444;
+}
+/* Center the form vertically and horizontally */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ensures vertical centering */
+}
+
+.profile-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.create-button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+    background-color: #555;
+}
+
+/* Login option styling */
+.login-option {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-option p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #444;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full page height for vertical centering */
+}
+
+.profile-form {
+    background-color: #eeeeee;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.create-button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+    background-color: #555;
+}
+
+/* Styling for sign-up option */
+.signup-option {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signup-option p {
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+/* Profile Page Styling */
+.profile-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Button Styling for switching accounts */
+.account-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.account-button:hover {
+    background-color: #555;
+}
+
+/* Ensuring form layout consistency */
+.another-account-form {
+    margin-top: 20px;
+}
+.login-option {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-option p {
+    font-size: 16px;
+    color: #555;
+}
+
+.login-option .login-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-option .login-link:hover {
+    text-decoration: underline;
+}
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+}

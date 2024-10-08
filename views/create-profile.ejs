@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/styles.css" rel="stylesheet">
+        <title>Login</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Logo" class="header-image">
+                <h2 class="library-title">Personal Library</h2>
+            </div>
+
+            <div class="nav-profile-container">
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="form-container">
+            <form action="/create-profile" method="POST" class="profile-form">
+                <h1>Create a New Profile</h1>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="create-button">Create Profile</button>
+            </form>
+
+            <!-- Sign-up link below the form -->
+            <div class="signup-option">
+                <p>Already have an account? <a href="/login" class="signup-link">Log in here.</a></p>
+            </div>
+        </div>
+    </body>
+</html>

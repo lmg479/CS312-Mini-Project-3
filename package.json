@@ -1,0 +1,29 @@
+{
+  "name": "CS-312-MiniProject-1",
+  "version": "1.0.0",
+  "main": "express.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmg479/CS-312-MiniProject-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmg479/CS-312-MiniProject-3/issues"
+  },
+  "homepage": "https://github.com/lmg479/CS-312-MiniProject-3#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.20.0",
+    "express-session": "^1.18.0",
+    "pg": "^8.13.0"
+  },
+  "description": ""
+}
